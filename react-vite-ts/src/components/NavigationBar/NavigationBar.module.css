@@ -1,0 +1,32 @@
+.main_navigation ul{
+    display:flex;
+    column-gap: 15px;
+    list-style: none; 
+    
+}
+.main_navigation ul>li{
+    position: relative;
+}
+
+.main_navigation ul>li>a{
+    color: #fff;
+}
+
+.main_navigation ul>li>a:hover{
+    color: #212121;
+}
+
+.nav_child{
+    display:none;
+}
+
+.main_navigation ul>li:hover .nav_child{
+    display:flex;
+    position: absolute;
+    padding:10px;
+    min-width: 160px;
+    row-gap: 10px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px rgb(0,0,0,0.3);
+}

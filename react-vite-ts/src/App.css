@@ -1,0 +1,120 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:22px; 
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("https://c4.wallpaperflare.com/wallpaper/635/733/259/landscape-daniel-casson-coast-shore-wallpaper-preview.jpg");
+  background-repeat: no-repeat; /* Không lặp lại hình ảnh */
+  background-position: center; /* Căn giữa hình ảnh */
+  background-size: cover; /* Tự động điều chỉnh kích thước để phủ đầy phần tử */
+}   
+
+.weather{
+  width:600px;
+  height: 700px;
+  border-radius: 10px;
+  padding:30px 20px;
+  background-image:    url("https://c4.wallpaperflare.com/wallpaper/635/733/259/landscape-daniel-casson-coast-shore-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover; 
+}
+.TimeDay{
+  display:flex;
+  justify-content: space-between;
+}
+.input-container {
+  position: relative;
+}
+.search{
+  border-radius: 10px;
+  box-shadow: 0 5px 4px rgba(0,0,0,0.2);
+  font-size: 19px;
+  transition: 0.4s;
+  width: 50%;
+  margin: 0 auto;
+  padding:10px 20px;  
+  justify-content: center;
+  border:none;
+  outline:none;
+  background:rgba(255,255,255,0.7)
+ 
+}
+.icon {
+  position: absolute;
+  top: 21px;
+  right: 148px;
+  transform: translateY(-50%);
+}
+.search :focus{
+  border-radius: 10px;
+  background:rgba(255,255,255,0.7)
+}
+.detail{
+  display: flex ;
+   justify-content: center;
+}
+.content{
+  text-align: center;
+  color:white;
+  margin: 30px 0;
+}
+
+.capital{
+  text-shadow:2px 2px rgba(0,0,0,0.5)
+}
+.time{
+  margin:15px 0 20px 0; 
+  font-size:15px;
+}
+.NextHour{
+  color:white;
+  border-radius: 10px;
+  box-shadow:
+  0 5px 5px rgba(102, 204, 255, 0.4),
+  0 -5px 5px rgba(102, 204, 255, 0.4),
+  5px 0 5px rgba(102, 204, 255, 0.4),
+  -5px 0 5px rgba(102, 204, 255, 0.4);
+  height: 266px;
+}
+.Hour_item--separate{
+  border-bottom: 2px solid #888888;
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px auto 0px;
+  width: 60px;
+  transition: all 0.5s ease 0s;
+}
+.Hour_item--separate {
+  font: 700 30px/28px 'Roboto', sans-serif;
+  white-space: nowrap;
+  line-height: 30px;
+
+}
+.Hour_item--separate:hover {
+  width: 160px; /* Độ dài thêm 30px so với kích thước ban đầu */
+}
+.box{
+  
+  box-shadow:
+  0 5px 5px rgba(102, 204, 255, 1),
+  0 -5px 5px rgba(102, 204, 255, 1),
+  5px 0 5px rgba(102, 204, 255, 1),
+  -5px 0 5px rgba(102, 204, 255, 1);
+  border-radius: 20px;
+  padding: 10px; 
+  margin:10px  1px;
+}
+.border{
+  border-radius:20px;
+}

@@ -1,0 +1,10 @@
+.footer{
+    background-color: #212121;
+    color: #fff;
+}
+.footer_middle{
+    display:flex;
+}
+.footer_middle_item{
+    width: calc(100% / 4);
+}
